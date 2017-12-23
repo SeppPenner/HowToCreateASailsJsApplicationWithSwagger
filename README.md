@@ -29,7 +29,11 @@ npm install swagger -g
 swagger project create yournameproject
 ```
 
-6.[Create the new project](See https://sailsjs.com/documentation/reference/command-line-interface/sails-generate) (Only if 4. didn't work)
+Choose **sails** as framework in the following dialog option.
+
+Run this step in Windows Powershell in Admin mode only. Otherwise it might fail: https://github.com/swagger-api/swagger-node/issues/315
+
+6.[Create the new project](See https://sailsjs.com/documentation/reference/command-line-interface/sails-generate) (Only if 5. didn't work)
 ```bash
 sails new yournameproject
 ```
@@ -56,7 +60,7 @@ npm install mqtt --save // Package to send/ receive MQTT messages (See https://g
 
 9. Specifiy your options, e.g. database connections, logging, auth, ....
 
-10. Copy the example swagger.yaml file from https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/YAML to your service's **api\swagger\** folder. (Only if 4. didn't work)
+10. Copy the example swagger.yaml file from https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/YAML to your service's **api\swagger\** folder. (Only if 5. didn't work)
 
 11. To start the project type:
 ```bash
@@ -83,7 +87,7 @@ swagger project edit
 
 13. Add the controller methods you defined in your controllers to the config/routes.js file. Please recognize the special notice [below](https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/#SpecialThingsToNotice).
 
-14. Add the content of the [Swagger_Stuff folder](https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/Swagger_Stuff) to your service's **assets** folder. (Only if 4. didn't work)
+14. Add the content of the [Swagger_Stuff folder](https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/Swagger_Stuff) to your service's **assets** folder. (Only if 5. didn't work)
 
 
 15. Disable the default sails homepage view with the following configuration in your **config/routes.js** file (or take a look at the https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/exampleproject/config/routes.js file):
