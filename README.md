@@ -119,6 +119,8 @@ swagger project edit
 ```
 
 ## Updating dependencies
+1. Remove the package-lock.json file.
+2. Update via npm:
 ```bash
 npm i -g npm-check-updates
 npm-check-updates -u
