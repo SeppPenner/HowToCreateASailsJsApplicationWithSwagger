@@ -118,6 +118,14 @@ first. The service should than run on http://localhost:10010 if you haven't spec
 swagger project edit
 ```
 
+## Updating dependencies
+```bash
+npm i -g npm-check-updates
+npm-check-updates -u
+npm install
+```
+https://stackoverflow.com/questions/16073603/how-do-i-update-each-dependency-in-package-json-to-the-latest-version
+
 Change history
 --------------
 * **Version 1.0.0.0 (2017-12-23)** : 1.0 release.
