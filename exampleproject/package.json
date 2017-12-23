@@ -4,8 +4,8 @@
   "private": true,
   "description": "New Swagger API Project",
   "keywords": [],
-  "author": "",
-  "license": "",
+  "author": "SeppPenner",
+  "license": "GNU GENERAL PUBLIC LICENSE v3",
   "main": "app.js",
   "dependencies": {
     "sails": "~0.12.14",
@@ -36,11 +36,8 @@
     "debug": "node debug app.js",
     "test": "swagger project test"
   },
-  "main": "app.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger.git"
-  },
-  "author": "SeppPenner",
-  "license": "GNU GENERAL PUBLIC LICENSE v3"
+  }
 }
