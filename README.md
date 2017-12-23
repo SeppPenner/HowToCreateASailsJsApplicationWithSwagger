@@ -62,7 +62,7 @@ npm install mqtt --save // Package to send/ receive MQTT messages (See https://g
 
 10. Copy the example swagger.yaml file from https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/tree/master/YAML to your service's **api\swagger** folder. (Only if 5. didn't work)
 
-11. Adjust the **config/models.js** file like the following:
+11. Adjust the **config/models.js** file like the following (or take a look at the https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/blob/master/exampleproject/config/models.js file):
 ```javascript
 migrate: 'safe'
 ```
@@ -79,7 +79,7 @@ swagger project edit
 14. Add the content of the [Swagger_Stuff folder](https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/tree/master/Swagger_Stuff) to your service's **assets** folder.
 
 
-15. Disable the default sails homepage view with the following configuration in your **config/routes.js** file (or take a look at the https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/exampleproject/config/routes.js file):
+15. Disable the default sails homepage view with the following configuration in your **config/routes.js** file (or take a look at the https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/blob/master/exampleproject/config/routes.js file):
 ```javascript
 '/':
 {
