@@ -9,7 +9,7 @@ HowToCreateASailsJsApplicationWithSwagger is a project that shows how to setup [
 [![GitHub license](https://img.shields.io/badge/license-AGPL-blue.svg)](https://raw.githubusercontent.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/master/License.txt)
 
 ## Installation
-1. Install Node.JS properly (administrator mode on Windows)
+1. Install [Node.JS](https://nodejs.org/en/download/) properly (administrator mode on Windows)
 2. Check if the [environment variables](https://www.nextofwindows.com/windows-quick-tip-how-to-find-out-all-my-environment-variables) are set properly. (See image below for more information)
 
 ![Screenshot of the environment variables](https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/blob/master/Environment_Variables.png "Screenshot of the environment variables")
@@ -60,7 +60,7 @@ npm install mqtt --save // Package to send/ receive MQTT messages (See https://g
 
 9. Specifiy your options, e.g. database connections, logging, auth, ....
 
-10. Copy the example swagger.yaml file from https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/tree/master/YAML to your service's **api\swagger\** folder. (Only if 5. didn't work)
+10. Copy the example swagger.yaml file from https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/tree/master/YAML to your service's **api\swagger** folder. (Only if 5. didn't work)
 
 11. Adjust the **config/models.js** file like the following:
 ```javascript
@@ -107,7 +107,7 @@ first. The service should than run on http://localhost:10010 if you haven't spec
 
 ## Special things to notice:
 * The ["winston" package](https://www.npmjs.com/package/winston) needs a special (before created) file to log data to. It cannot create its own (empty) log file somehow!
-* Never use / as the last char in a route in the Sails.JS **config/routes.js** file. This will crash your service! E.g. don't use something like _'post /api/user/register': 'UserController.registerUser**/**'_. Use _'post /api/user/register': 'UserController.registerUser'_ instead.
+* Never use / as the last char in a route in the Sails.JS **config/routes.js** file. This will crash your service! E.g. don't use something like _'post /api/user/register': 'UserController.registerUser/'_. Use _'post /api/user/register': 'UserController.registerUser'_ instead.
 * Make sure that the **assets/index.html** file and the **swagger.yaml** file both contain the exact same hostname/ uri (even localhost and 127.0.0.1 won't work!!!)
 * You can easily clone the project and customize it :) --> [![GitHub license](https://img.shields.io/badge/license-AGPL-blue.svg)](https://raw.githubusercontent.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/master/License.txt)
 
