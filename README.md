@@ -24,7 +24,7 @@ npm install sails -g
 npm install swagger -g
 ```
 
-5.[Create the new project](https://www.npmjs.com/package/swagger) (didn't work for me but might.)
+5. [Create the new project](https://www.npmjs.com/package/swagger) (didn't work for me but might.)
 ```bash
 swagger project create yournameproject
 ```
@@ -33,7 +33,7 @@ Choose **sails** as framework in the following dialog option.
 
 Run this step in Windows Powershell in Admin mode only. Otherwise it might fail: https://github.com/swagger-api/swagger-node/issues/315
 
-6.[Create the new project](https://sailsjs.com/documentation/reference/command-line-interface/sails-generate) (Only if 5. didn't work)
+6. [Create the new project](https://sailsjs.com/documentation/reference/command-line-interface/sails-generate) (Only if 5. didn't work)
 ```bash
 sails new yournameproject
 ```
