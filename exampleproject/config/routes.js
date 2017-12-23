@@ -33,8 +33,8 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'homepage'
-  }
+    //view: 'homepage'
+  },
 
   /***************************************************************************
   *                                                                          *
@@ -45,5 +45,5 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
-
+  'post /api/user/register': 'UserController.registerUser'
 };
