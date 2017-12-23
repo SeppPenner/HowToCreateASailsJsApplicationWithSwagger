@@ -7,7 +7,7 @@
  * configuration layered on top.
  *
  * For more information on sockets configuration, including advanced config options, see:
- * http://sailsjs.org/#!/documentation/reference/sails.config/sails.config.sockets.html
+ * http://sailsjs.org/#/documentation/reference/sails.config/sails.config.sockets.html
  */
 
 module.exports.sockets = {
@@ -44,11 +44,11 @@ module.exports.sockets = {
   // -OR-
   //
 
-  // adapter: 'socket.io-redis',
+  // adapter: 'redis',
   // host: '127.0.0.1',
   // port: 6379,
-  // db: 0,
-  // pass: '<redis auth password>',
+  // db: 'sails',
+  // pass: '<redis auth password>'
 
 
 
@@ -82,11 +82,11 @@ module.exports.sockets = {
   * If no valid cookie was sent, a temporary session will be created for the *
   * connecting socket.                                                       *
   *                                                                          *
-  * If the cookie sent as part of the connection request doesn't match any   *
+  * If the cookie sent as part of the connetion request doesn't match any    *
   * known user session, a new user session is created for it.                *
   *                                                                          *
   * In most cases, the user would already have a cookie since they loaded    *
-  * the socket.io client and the initial HTML page you're building.         *
+  * the socket.io client and the initial HTML pageyou're building.           *
   *                                                                          *
   * However, in the case of cross-domain requests, it is possible to receive *
   * a connection upgrade request WITHOUT A COOKIE (for certain transports)   *
@@ -97,7 +97,7 @@ module.exports.sockets = {
   * works, even in Safari), then opening the connection.                     *
   *                                                                          *
   * You can also pass along a ?cookie query parameter to the upgrade url,    *
-  * which Sails will use in the absence of a proper cookie e.g. (when        *
+  * which Sails will use in the absense of a proper cookie e.g. (when        *
   * connecting from the client):                                             *
   * io.sails.connect('http://localhost:1337?cookie=smokeybear')              *
   *                                                                          *
@@ -116,9 +116,7 @@ module.exports.sockets = {
 
   /***************************************************************************
   *                                                                          *
-  * `afterDisconnect`                                                        *
-  *                                                                          *
-  * This custom afterDisconnect function will be run each time a socket      *
+  * This custom afterDisconnect function will be run each time a socket         *
   * disconnects                                                              *
   *                                                                          *
   ***************************************************************************/
@@ -127,15 +125,11 @@ module.exports.sockets = {
   //   return cb();
   // },
 
-  /***************************************************************************
-  *                                                                          *
-  * `transports`                                                             *
-  *                                                                          *
-  * A array of allowed transport methods which the clients will try to use.  *
-  * On server environments that don't support sticky sessions, the "polling" *
-  * transport should be disabled.                                            *
-  *                                                                          *
-  ***************************************************************************/
-  // transports: ["polling", "websocket"]
+
+
+
+
+  // More configuration options for Sails+Socket.io:
+  // http://sailsjs.org/#/documentation/reference/sails.config/sails.config.sockets.html
 
 };
