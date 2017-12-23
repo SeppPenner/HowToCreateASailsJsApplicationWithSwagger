@@ -47,7 +47,7 @@ cd yournameproject
 ```bash
 sails generate api user
 ```
-This will generate a 'user' model and controller.
+This will generate a **user** model and controller.
 
 8. Install additional packages as you like:
 ```bash
@@ -60,7 +60,7 @@ npm install mqtt --save // Package to send/ receive MQTT messages (See https://g
 
 9. Specifiy your options, e.g. database connections, logging, auth, ....
 
-10. Copy the example swagger.yaml file from https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/YAML to your service's **api\swagger\** folder. (Only if 5. didn't work)
+10. Copy the example swagger.yaml file from https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/tree/master/YAML to your service's **api\swagger\** folder. (Only if 5. didn't work)
 
 11. Adjust the **config/models.js** file like the following:
 ```javascript
@@ -74,9 +74,9 @@ to prevent sails from asking you if you want to delete your data in the database
 swagger project edit
 ```
 
-13. Add the controller methods you defined in your controllers to the config/routes.js file. Please recognize the special notice [below](https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/#SpecialThingsToNotice).
+13. Add the controller methods you defined in your controllers to the config/routes.js file. Please recognize the special notice [below](https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger#special-things-to-notice).
 
-14. Add the content of the [Swagger_Stuff folder](https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/Swagger_Stuff) to your service's **assets** folder.
+14. Add the content of the [Swagger_Stuff folder](https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/tree/master/Swagger_Stuff) to your service's **assets** folder.
 
 
 15. Disable the default sails homepage view with the following configuration in your **config/routes.js** file (or take a look at the https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/exampleproject/config/routes.js file):
@@ -107,7 +107,7 @@ first. The service should than run on http://localhost:10010 if you haven't spec
 
 ## Special things to notice:
 * The ["winston" package](https://www.npmjs.com/package/winston) needs a special (before created) file to log data to. It cannot create its own (empty) log file somehow!
-* Never use / as the last char in a route in the Sails.JS config/routes.js file. This will crash your service! E.g. don't use something like _'post /api/user/register': 'UserController.registerUser**/**'_. Use _'post /api/user/register': 'UserController.registerUser'_ instead.
+* Never use / as the last char in a route in the Sails.JS **config/routes.js** file. This will crash your service! E.g. don't use something like _'post /api/user/register': 'UserController.registerUser**/**'_. Use _'post /api/user/register': 'UserController.registerUser'_ instead.
 * Make sure that the **assets/index.html** file and the **swagger.yaml** file both contain the exact same hostname/ uri (even localhost and 127.0.0.1 won't work!!!)
 * You can easily clone the project and customize it :) --> [![GitHub license](https://img.shields.io/badge/license-AGPL-blue.svg)](https://raw.githubusercontent.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/master/License.txt)
 
