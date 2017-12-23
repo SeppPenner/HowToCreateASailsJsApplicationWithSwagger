@@ -33,7 +33,7 @@ Choose **sails** as framework in the following dialog option.
 
 Run this step in Windows Powershell in Admin mode only. Otherwise it might fail: https://github.com/swagger-api/swagger-node/issues/315
 
-6.[Create the new project](See https://sailsjs.com/documentation/reference/command-line-interface/sails-generate) (Only if 5. didn't work)
+6.[Create the new project](https://sailsjs.com/documentation/reference/command-line-interface/sails-generate) (Only if 5. didn't work)
 ```bash
 sails new yournameproject
 ```
@@ -43,7 +43,7 @@ sails new yournameproject
 cd yournameproject
 ```
 
-8. [Create a controller](See https://sailsjs.com/documentation/reference/command-line-interface/sails-generate)
+8. [Create a controller](https://sailsjs.com/documentation/reference/command-line-interface/sails-generate)
 ```bash
 sails generate api user
 ```
