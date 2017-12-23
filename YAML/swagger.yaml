@@ -1,0 +1,104 @@
+swagger: '2.0'
+info:
+  version: 1.0.0.0
+  title: Your App
+host: 'localhost:1337'
+basePath: /
+schemes:
+  - http
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+securityDefinitions:
+  basicAuth:
+    type: basic
+security:
+  - basicAuth: []
+paths:
+  /api/user/register:
+    x-swagger-router-controller: user
+    post:
+      description: Register a new user
+      operationId: registerUser
+      parameters:
+        - name: RegisterUser
+          in: body
+          description: Register user
+          required: true
+          schema:
+            type: object
+            properties:
+              firstName:
+                type: string
+              lastName:
+                type: string
+              email:
+                type: string
+                format: email
+              password:
+                type: string
+                format: password
+              birthday:
+                type: string
+                format: date
+              city:
+                type: string
+              houseNumber:
+                type: string
+              street:
+                type: string
+              zipCode:
+                type: string
+              additionalInformation:
+                type: string
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/RegisterResponse'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/RegisterErrorResponse'
+definitions:
+  RegisterResponse:
+    required:
+      - userId
+      - firstName
+      - lastName
+      - email
+      - birthday
+      - city
+      - houseNumber
+      - street
+      - zipCode
+      - additionalInformation
+    properties:
+      userId:
+        type: string
+      firstName:
+        type: string
+      lastName:
+        type: string
+      email:
+        type: string
+      birthday:
+        type: string
+      city:
+        type: string
+      houseNumber:
+        type: string
+      street:
+        type: string
+      zipCode:
+        type: string
+      additionalInformation:
+        type: string
+  RegisterErrorResponse:
+    required:
+      - message
+    properties:
+      message:
+        type: string
