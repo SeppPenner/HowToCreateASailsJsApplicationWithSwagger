@@ -134,6 +134,9 @@ https://stackoverflow.com/questions/16073603/how-do-i-update-each-dependency-in-
 3. Adjust your models and controllers according to https://github.com/aslanvaroqua/sails-ts/blob/master/api/controllers/WelcomeController.ts and https://github.com/aslanvaroqua/sails-ts/blob/master/api/models/Welcome.ts
 4. Start your app with **node app.js** instead of **swagger project start** or **sails lift**
 
+## Validating parameters
+See https://github.com/chriso/validator.js for examples.
+
 Change history
 --------------
 * **Version 1.0.0.0 (2018-01-02)** : Added Typescript support to description.
