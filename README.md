@@ -134,10 +134,45 @@ https://stackoverflow.com/questions/16073603/how-do-i-update-each-dependency-in-
 3. Adjust your models and controllers according to https://github.com/aslanvaroqua/sails-ts/blob/master/api/controllers/WelcomeController.ts and https://github.com/aslanvaroqua/sails-ts/blob/master/api/models/Welcome.ts
 4. Start your app with **node app.js** instead of **swagger project start** or **sails lift**
 
+## Adding SSL
+1. Change the host from http://localhost:10010/swagger to https://localhost:10010/swagger in the /assets/index.html file.
+2. Remove http from the schemes section in the swagger.yaml file.
+3. Uncomment (and change) the following lines as shown below in the /config/local.js file:
+
+```json
+ssl: {
+    // ca: require('fs').readFileSync(__dirname + './ssl/my_apps_ssl_gd_bundle.crt'), //Do not use this line with self-signed certificates --> Uncommented
+     key: require('fs').readFileSync(__dirname + '/ssl/default.key'),
+     cert: require('fs').readFileSync(__dirname + '/ssl/default.crt')
+   },
+```
+
+and
+
+```json
+port: process.env.PORT || 10010,
+```
+
+4. Add your generated ssl files (you might need to replace your SERVER_NAME in this script)
+```bash
+export SERVER_NAME='localhost'
+mkdir ssl
+
+openssl req -nodes -x509 -newkey rsa:2048 \
+  -subj "/CN=$SERVER_NAME" \
+  -keyout ssl/default.key \
+  -out ssl/default.crt
+```
+
+to the config folder: /config/ssl/
+
+5. Now your server should run under https://localhost:10010/
+
 ## Validating parameters
 See https://github.com/chriso/validator.js for examples.
 
 Change history
 --------------
+* **Version 1.0.0.0 (2018-04-09)** : Added SSL support example.
 * **Version 1.0.0.0 (2018-01-02)** : Added Typescript support to description.
 * **Version 1.0.0.0 (2017-12-23)** : 1.0 release.
