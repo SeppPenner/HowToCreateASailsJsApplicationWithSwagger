@@ -25,7 +25,8 @@
     "grunt-contrib-cssmin": "~2.2.1",
     "grunt-contrib-less": "1.4.1",
     "grunt-contrib-coffee": "~2.0.0",
-    "swagger-sails-hook": "^0.7.0"
+    "swagger-sails-hook": "^0.7.0",
+    "snyk": "^1.161.1"
   },
   "devDependencies": {
     "should": "^13.1.3",
@@ -34,10 +35,13 @@
   "scripts": {
     "start": "node app.js",
     "debug": "node debug app.js",
-    "test": "swagger project test"
+    "test": "swagger project test",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger.git"
-  }
+  },
+  "snyk": true
 }
