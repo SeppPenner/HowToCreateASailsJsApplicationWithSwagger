@@ -7,14 +7,14 @@ patch:
     - sails > sort-route-addresses > lodash:
         patched: '2019-05-07T05:34:43.640Z'
     - sails-disk > machinepack-fs > machine > lodash:
-        patched: '2019-05-28T05:57:46.461Z'
+        patched: '2019-05-28T05:58:10.404Z'
     - sails-disk > machinepack-fs > machinepack-strings > lodash:
-        patched: '2019-05-28T05:57:46.461Z'
+        patched: '2019-05-28T05:58:10.404Z'
     - sails-disk > machinepack-fs > machinepack-util > lodash:
-        patched: '2019-05-28T05:57:46.461Z'
+        patched: '2019-05-28T05:58:10.404Z'
     - sails-disk > machinepack-fs > machinepack-json > machine > lodash:
-        patched: '2019-05-28T05:57:46.461Z'
+        patched: '2019-05-28T05:58:10.404Z'
     - sails-disk > machinepack-fs > machinepack-util > machine > lodash:
-        patched: '2019-05-28T05:57:46.461Z'
+        patched: '2019-05-28T05:58:10.404Z'
     - sails-disk > machinepack-fs > machinepack-strings > machine > lodash:
-        patched: '2019-05-28T05:57:46.461Z'
+        patched: '2019-05-28T05:58:10.404Z'
