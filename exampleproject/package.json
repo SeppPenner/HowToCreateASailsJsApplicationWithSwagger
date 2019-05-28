@@ -9,7 +9,7 @@
   "main": "app.js",
   "dependencies": {
     "sails": "~1.2.2",
-    "sails-disk": "~0.10.0",
+    "sails-disk": "~1.0.0",
     "rc": "~1.2.7",
     "include-all": "~4.0.3",
     "ejs": "~2.5.7",
