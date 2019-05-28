@@ -7,17 +7,17 @@ patch:
     - sails > sort-route-addresses > lodash:
         patched: '2019-05-07T05:34:43.640Z'
     - sails-disk > machinepack-fs > machine > lodash:
-        patched: '2019-05-28T06:04:01.155Z'
+        patched: '2019-05-28T06:04:01.636Z'
     - sails-disk > machinepack-fs > machinepack-strings > lodash:
-        patched: '2019-05-28T06:04:01.155Z'
+        patched: '2019-05-28T06:04:01.636Z'
     - sails-disk > machinepack-fs > machinepack-util > lodash:
-        patched: '2019-05-28T06:04:01.155Z'
+        patched: '2019-05-28T06:04:01.636Z'
     - sails-disk > machinepack-fs > machinepack-json > machine > lodash:
-        patched: '2019-05-28T06:04:01.155Z'
+        patched: '2019-05-28T06:04:01.636Z'
     - sails-disk > machinepack-fs > machinepack-util > machine > lodash:
-        patched: '2019-05-28T06:04:01.155Z'
+        patched: '2019-05-28T06:04:01.636Z'
     - sails-disk > machinepack-fs > machinepack-strings > machine > lodash:
-        patched: '2019-05-28T06:04:01.155Z'
+        patched: '2019-05-28T06:04:01.636Z'
   'npm:debug:20170905':
     - grunt-contrib-watch > tiny-lr > body-parser > debug:
         patched: '2019-05-28T05:59:19.534Z'
