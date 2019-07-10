@@ -95,3 +95,5 @@ patch:
         patched: '2019-07-04T04:04:53.605Z'
     - swagger-sails-hook > swagger-node-runner > sway > json-refs > graphlib > lodash:
         patched: '2019-07-04T04:04:53.605Z'
+    - snyk > snyk-php-plugin > @snyk/composer-lockfile-parser > lodash:
+        patched: '2019-07-10T07:04:33.811Z'
