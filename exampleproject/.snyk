@@ -112,3 +112,6 @@ patch:
         patched: '2019-10-04T05:24:29.394Z'
     - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
         patched: '2019-10-04T05:24:29.394Z'
+  'npm:extend:20180424':
+    - swagger-sails-hook > swagger-node-runner > sway > json-refs > path-loader > superagent > extend:
+        patched: '2019-10-27T16:56:37.317Z'
