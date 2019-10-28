@@ -8,7 +8,7 @@
   "license": "GNU GENERAL PUBLIC LICENSE v3",
   "main": "app.js",
   "dependencies": {
-    "sails": "~1.2.2",
+    "sails": "~1.2.3",
     "sails-disk": "~1.1.2",
     "rc": "~1.2.7",
     "include-all": "~4.0.3",
