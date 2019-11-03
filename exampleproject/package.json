@@ -8,24 +8,25 @@
   "license": "GNU GENERAL PUBLIC LICENSE v3",
   "main": "app.js",
   "dependencies": {
-    "sails": "~0.12.14",
-    "sails-disk": "~0.10.0",
-    "rc": "~1.2.2",
+    "sails": "~1.2.3",
+    "sails-disk": "~1.1.2",
+    "rc": "~1.2.8",
     "include-all": "~4.0.3",
-    "ejs": "~2.5.7",
-    "grunt": "1.0.1",
-    "grunt-sync": "~0.7.0",
+    "ejs": "~2.7.1",
+    "grunt": "1.0.4",
+    "grunt-sync": "~0.8.1",
     "grunt-contrib-copy": "~1.0.0",
     "grunt-contrib-clean": "~1.1.0",
     "grunt-contrib-concat": "~1.0.1",
     "grunt-sails-linker": "~1.0.4",
     "grunt-contrib-jst": "~1.0.0",
-    "grunt-contrib-watch": "~1.0.0",
-    "grunt-contrib-uglify": "~3.2.1",
+    "grunt-contrib-watch": "~1.1.0",
+    "grunt-contrib-uglify": "~3.4.0",
     "grunt-contrib-cssmin": "~2.2.1",
-    "grunt-contrib-less": "1.4.1",
-    "grunt-contrib-coffee": "~2.0.0",
-    "swagger-sails-hook": "^0.7.0"
+    "grunt-contrib-less": "2.0.0",
+    "grunt-contrib-coffee": "~2.1.0",
+    "swagger-sails-hook": "^0.7.0",
+    "snyk": "^1.239.0"
   },
   "devDependencies": {
     "should": "^13.1.3",
@@ -34,10 +35,13 @@
   "scripts": {
     "start": "node app.js",
     "debug": "node debug app.js",
-    "test": "swagger project test"
+    "test": "swagger project test",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger.git"
-  }
+  },
+  "snyk": true
 }

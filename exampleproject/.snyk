@@ -1,0 +1,117 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:lodash:20180130':
+    - sails > sort-route-addresses > lodash:
+        patched: '2019-05-07T05:34:43.640Z'
+    - sails-disk > machinepack-fs > machine > lodash:
+        patched: '2019-05-28T06:04:01.636Z'
+    - sails-disk > machinepack-fs > machinepack-strings > lodash:
+        patched: '2019-05-28T06:04:01.636Z'
+    - sails-disk > machinepack-fs > machinepack-util > lodash:
+        patched: '2019-05-28T06:04:01.636Z'
+    - sails-disk > machinepack-fs > machinepack-json > machine > lodash:
+        patched: '2019-05-28T06:04:01.636Z'
+    - sails-disk > machinepack-fs > machinepack-util > machine > lodash:
+        patched: '2019-05-28T06:04:01.636Z'
+    - sails-disk > machinepack-fs > machinepack-strings > machine > lodash:
+        patched: '2019-05-28T06:04:01.636Z'
+    - swagger-sails-hook > swagger-node-runner > lodash:
+        patched: '2019-05-28T18:42:52.258Z'
+    - swagger-sails-hook > swagger-node-runner > bagpipes > lodash:
+        patched: '2019-05-28T18:42:52.258Z'
+    - swagger-sails-hook > swagger-node-runner > bagpipes > machinepack-http > lodash:
+        patched: '2019-05-28T18:42:52.258Z'
+    - swagger-sails-hook > swagger-node-runner > bagpipes > machinepack-http > machine > lodash:
+        patched: '2019-05-28T18:42:52.258Z'
+    - swagger-sails-hook > swagger-node-runner > bagpipes > machinepack-http > machinepack-urls > lodash:
+        patched: '2019-05-28T18:42:52.258Z'
+    - swagger-sails-hook > swagger-node-runner > bagpipes > machinepack-http > machine > rttc > lodash:
+        patched: '2019-05-28T18:42:52.258Z'
+    - swagger-sails-hook > swagger-node-runner > bagpipes > machinepack-http > machinepack-urls > machine > lodash:
+        patched: '2019-05-28T18:42:52.258Z'
+    - swagger-sails-hook > swagger-node-runner > bagpipes > machinepack-http > machinepack-urls > machine > rttc > lodash:
+        patched: '2019-05-28T18:42:52.258Z'
+  'npm:debug:20170905':
+    - grunt-contrib-watch > tiny-lr > body-parser > debug:
+        patched: '2019-05-28T05:59:19.534Z'
+  'npm:ms:20170412':
+    - grunt-contrib-watch > tiny-lr > body-parser > debug > ms:
+        patched: '2019-05-28T05:59:19.534Z'
+  SNYK-JS-LODASH-450202:
+    - snyk > snyk-mvn-plugin > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - grunt-contrib-coffee > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - grunt-contrib-watch > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - snyk > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - grunt > grunt-legacy-log > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - sails-disk > async > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - grunt-contrib-less > async > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - sails > async > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - grunt > grunt-legacy-util > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - grunt-contrib-watch > async > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - snyk > @snyk/dep-graph > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - snyk > inquirer > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - snyk > snyk-config > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - grunt-contrib-less > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - snyk > snyk-nodejs-lockfile-parser > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - snyk > snyk-nuget-plugin > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - snyk > snyk-php-plugin > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - grunt-contrib-watch > gaze > globule > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - sails > machinepack-redis > async > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - sails > sails-generate > async > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - sails > skipper > async > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - grunt > grunt-legacy-log > grunt-legacy-log-utils > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - snyk > @snyk/dep-graph > graphlib > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - snyk > snyk-go-plugin > graphlib > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - swagger-sails-hook > swagger-node-runner > sway > lodash:
+        patched: '2019-07-04T08:32:42.375Z'
+    - swagger-sails-hook > swagger-node-runner > sway > json-refs > graphlib > lodash:
+        patched: '2019-07-04T04:04:53.605Z'
+    - snyk > snyk-php-plugin > @snyk/composer-lockfile-parser > lodash:
+        patched: '2019-07-10T07:04:37.287Z'
+    - snyk > snyk-nuget-plugin > dotnet-deps-parser > lodash:
+        patched: '2019-10-04T07:04:08.998Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > lodash:
+        patched: '2019-10-04T07:04:08.998Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > lodash:
+        patched: '2019-10-04T07:04:08.998Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > graphlib > lodash:
+        patched: '2019-10-04T07:04:08.998Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash:
+        patched: '2019-10-04T07:04:08.998Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - snyk > proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T05:24:29.394Z'
+    - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T05:24:29.394Z'
+  'npm:extend:20180424':
+    - swagger-sails-hook > swagger-node-runner > sway > json-refs > path-loader > superagent > extend:
+        patched: '2019-10-27T16:56:37.317Z'
