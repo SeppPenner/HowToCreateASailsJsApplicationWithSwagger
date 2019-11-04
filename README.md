@@ -6,7 +6,7 @@ HowToCreateASailsJsApplicationWithSwagger is a project that shows how to setup [
 [![GitHub issues](https://img.shields.io/github/issues/SeppPenner/HowToCreateASailsJsApplicationWithSwagger.svg)](https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/issues)
 [![GitHub forks](https://img.shields.io/github/forks/SeppPenner/HowToCreateASailsJsApplicationWithSwagger.svg)](https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/network)
 [![GitHub stars](https://img.shields.io/github/stars/SeppPenner/HowToCreateASailsJsApplicationWithSwagger.svg)](https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/stargazers)
-[![GitHub license](https://img.shields.io/badge/license-AGPL-blue.svg)](https://raw.githubusercontent.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/master/License.txt)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://raw.githubusercontent.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/master/License.txt)
 
 ## Installation
 1. Install [Node.JS](https://nodejs.org/en/download/) properly (administrator mode on Windows)
@@ -109,7 +109,7 @@ first. The service should than run on http://localhost:10010 if you haven't spec
 * The ["winston" package](https://www.npmjs.com/package/winston) needs a special (before created) file to log data to. It cannot create its own (empty) log file somehow!
 * Never use / as the last char in a route in the Sails.JS **config/routes.js** file. This will crash your service! E.g. don't use something like _'post /api/user/register': 'UserController.registerUser/'_. Use _'post /api/user/register': 'UserController.registerUser'_ instead.
 * Make sure that the **assets/index.html** file and the **swagger.yaml** file both contain the exact same hostname/ uri (even localhost and 127.0.0.1 won't work!!!)
-* You can easily clone the project and customize it :) --> [![GitHub license](https://img.shields.io/badge/license-AGPL-blue.svg)](https://raw.githubusercontent.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/master/License.txt)
+* You can easily clone the project and customize it :) --> [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://raw.githubusercontent.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/master/License.txt)
 
 ## Updating the basic uri/ hostname of the service
 1. Update the **assets/index.html** file.
