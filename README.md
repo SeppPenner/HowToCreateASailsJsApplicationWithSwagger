@@ -173,6 +173,5 @@ See https://github.com/chriso/validator.js for examples.
 
 Change history
 --------------
-* **Version 1.0.0.0 (2018-04-09)** : Added SSL support example.
-* **Version 1.0.0.0 (2018-01-02)** : Added Typescript support to description.
-* **Version 1.0.0.0 (2017-12-23)** : 1.0 release.
+
+See the [Changelog](https://github.com/SeppPenner/HowToCreateASailsJsApplicationWithSwagger/blob/master/Changelog.md).
